@@ -1,119 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Datos Abstractos</title>
-	<style>
-		header {
-			background-color: #3f51b5;
-			color: white;
-			padding: 20px;
-		}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Jaysi</title>
+    <style>
+        body {
+            background-color: #fbe7e7;
+            font-family: 'Georgia', serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
 
-		h1 {
-			margin: 0;
-			font-size: 36px;
-		}
+        .carta {
+            background-color: #fff;
+            max-width: 600px;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border: 2px solid #e09aa6;
+        }
 
-		main {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 20px;
-		}
+        .carta h1 {
+            text-align: center;
+            color: #c94c57;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
 
-		section {
-			margin-bottom: 40px;
-			padding-bottom: 20px;
-			border-bottom: 1px solid #ccc;
-		}
+        .carta p {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
 
-		h2 {
-			color: #3f51b5;
-			font-size: 24px;
-			margin-top: 0;
-		}
+        .firma {
+            text-align: right;
+            margin-top: 30px;
+            font-style: italic;
+        }
 
-		p {
-			line-height: 1.5;
-			margin-top: 0;
-		}
-
-		pre {
-			background-color: #f5f5f5;
-			padding: 10px;
-			overflow: auto;
-		}
-
-		code {
-			color: #f44336;
-			font-family: "Courier New", Courier, monospace;
-			font-size: 16px;
-		}
-
-		ul {
-			list-style-type: none;
-			padding-left: 0;
-		}
-
-		li::before {
-			content: "\2022";
-			color: #3f51b5;
-			display: inline-block;
-			width: 1em;
-			margin-left: -1em;
-		}
-
-		footer {
-			background-color: #ccc;
-			color: white;
-			padding: 20px;
-			text-align: center;
-		}
-	</style>
+        .fecha {
+            text-align: left;
+            margin-bottom: 20px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-	<header>
-		<h1>Datos Abstractos</h1>
-	</header>
-
-	<main>
-		<section>
-			<h2>¿Qué son los datos abstractos?</h2>
-			<p>Los datos abstractos son una estructura de datos que se define en términos de operaciones en lugar de representaciones de datos concretos. En otras palabras, se definen por su comportamiento en lugar de su implementación.</p>
-		</section>
-
-		<section>
-			<h2>Ejemplos de datos abstractos</h2>
-			<ul>
-				<li>Listas</li>
-				<li>Colas</li>
-				<li>Pilas</li>
-				<li>Árboles</li>
-				<li>Grafos</li>
-			</ul>
-		</section>
-
-		<section>
-			<h2>Implementaciones de datos abstractos</h2>
-			<p>Los datos abstractos se pueden implementar de diferentes maneras, dependiendo de las necesidades del programa. Algunas implementaciones comunes incluyen:</p>
-			<ul>
-				<li>Arreglos</li>
-				<li>Listas enlazadas</li>
-				<li>Punteros</li>
-			</ul>
-		</section>
-
-		<section>
-			<h2>Ejemplo de código en C++</h2>
-			<pre>
-				<code>
-class Pila {
-public:
-    Pila();
-    void push(int valor);
-    int pop();
-    bool isEmpty();
-private:
-    int datos[100];
-    int tope;
-};
-				</
+    <div class="carta">
+        <div class="fecha">[Lugar y fecha]</div>
+        <h1>Querida Jaysi,</h1>
+        <p>
+            No sé exactamente cómo empezar, porque lo que siento por ti es tan especial que a veces las palabras se quedan cortas. Pero quiero intentarlo, porque hay algo que necesito decirte.
+        </p>
+        <p>
+            Cada día que pasa, te veo más linda, no solo por lo hermosa que eres por fuera, sino por esa esencia única que te hace ser tú. Tu sonrisa, tu manera de ver el mundo y esos pequeños detalles que te hacen especial han ido conquistando mi corazón poco a poco, hasta el punto en que no puedo imaginarme sin esa luz que traes a mi vida.
+        </p>
+        <p>
+            Quiero que sepas que te quiero, y que no me gustaría estar mal contigo nunca. Las diferencias o malentendidos que puedan surgir no significan nada comparados con lo que siento por ti. Siempre estaré dispuesto a hablar, a entenderte y a cuidar lo que tenemos, porque lo valoro mucho.
+        </p>
+        <p>
+            No quiero perderte, Jaysi. Eres alguien muy importante para mí y deseo que sigamos construyendo momentos juntos, creciendo, riendo y apoyándonos en todo lo que venga.
+        </p>
+        <p>
+            Gracias por ser tú.
+        </p>
+        <div class="firma">
+            Con todo mi cariño,<br>
+            <strong>[Tu nombre]</strong>
+        </div>
+    </div>
+</body>
+</html>
